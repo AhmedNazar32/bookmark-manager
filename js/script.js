@@ -18,7 +18,7 @@ function onTabClick(e) {
     //Activate A New Tab and Panel based on Target
     e.target.classList.add('border-b-4','border-softRed')
 
-    const classString = e.target.getAttribute('data-target')
+    const classString = e.target.getAttribute('data-target');
     document.getElementById('panels').getElementsByClassName(classString)[0].classList.remove('hidden')
 }
 
