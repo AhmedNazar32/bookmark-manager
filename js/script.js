@@ -22,3 +22,14 @@ function onTabClick(e) {
     document.getElementById('panels').getElementsByClassName(classString)[0].classList.remove('hidden')
 }
 
+const menu = document.querySelector('.hamburger');
+const line = document.querySelector('.hamburger-middle')
+const mobileMenu = document.querySelector('.mobile-menu')
+
+menu.addEventListener('click',function(){
+
+    menu.classList.toggle('open')
+    line.classList.toggle('hidden')
+    mobileMenu.classList.toggle('hidden')
+})
+
